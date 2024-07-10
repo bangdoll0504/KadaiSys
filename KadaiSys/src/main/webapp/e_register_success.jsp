@@ -5,5 +5,6 @@
 </head>
 <body>
     <h1>Registration Successful!</h1>
+    <a href="welcome.jsp">メニュー</a>
 </body>
 </html>

@@ -22,6 +22,7 @@
         <% if (emprole == 1) { %>
             <li><a href="e_register.jsp">従業員登録</a></li>
             <li><a href="th_register.jsp">他病院登録</a></li>
+            <li><a href="sr_register.jsp">仕入れ先登録</a></li>
         <% } else if (emprole == 2) { %>
             <li><a href="reception_menu.jsp">受付メニュー</a></li>
         <% } else if (emprole == 3) { %>
