@@ -28,7 +28,7 @@
             <li><a href="sr_register.jsp">仕入れ先登録</a></li>
             <li><a href="shiireListServlet">仕入れ先一覧</a></li>
             <li><a href="medicine_register.jsp">薬剤登録</a></li>
-            
+            <li><a href="medic_list">薬剤リスト</a></li>            
         <% } else if (emprole == 2) { %>
             <li><a href="reception_menu.jsp">受付メニュー</a></li>
         <% } else if (emprole == 3) { %>
