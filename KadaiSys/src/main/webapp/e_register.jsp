@@ -1,30 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <meta charset="UTF-8">
+    <title>従業員登録</title>
 </head>
 <body>
+    <h1>従業員登録</h1>
     <form action="e_register" method="post">
-        <label for="empid">Employee ID:</label>
-        <input type="text" id="empid" name="empid" required><br><br>
-        
-        <label for="empfname">First Name:</label>
-        <input type="text" id="empfname" name="empfname"><br><br>
-        
-        <label for="emplname">Last Name:</label>
-        <input type="text" id="emplname" name="emplname"><br><br>
-        
-        <label for="emppasswordd">Password:</label>
-        <input type="password" id="emppasswordd" name="emppasswordd" required><br><br>
-        
-        <label for="emprole">Role:</label>
-        <select id="emprole" name="emprole" required>
-            <option value="1">Administrator</option>
-            <option value="2">Receptionist</option>
-            <option value="3">Doctor</option>
-        </select><br><br>
-        
-        <input type="submit" value="Register">
+        <label for="empid">従業員ID:</label>
+        <input type="text" name="empid" id="empid" required><br>
+
+        <label for="empfname">名前（姓）:</label>
+        <input type="text" name="empfname" id="empfname" required><br>
+
+        <label for="emplname">名前（名）:</label>
+        <input type="text" name="emplname" id="emplname" required><br>
+
+        <label for="emppasswordd">パスワード:</label>
+        <input type="password" name="emppasswordd" id="emppasswordd" required><br>
+
+        <label for="emppassword_confirm">パスワード（確認）:</label>
+        <input type="password" name="emppassword_confirm" id="emppassword_confirm" required><br>
+
+        <label for="emprole">役割:</label>
+        <select name="emprole" id="emprole" required>
+            <option value="1">管理者</option>
+            <option value="2">受付</option>
+            <option value="3">医師</option>
+        </select><br>
+
+        <input type="submit" value="登録">
     </form>
 </body>
 </html>

@@ -19,6 +19,8 @@ public class e_RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8"); // 漢字対応
+        response.setContentType("text/html; charset=UTF-8");
+
         String empid = request.getParameter("empid");
         String empfname = request.getParameter("empfname");
         String emplname = request.getParameter("emplname");
