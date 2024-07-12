@@ -46,6 +46,6 @@ public class shiireListServlet extends HttpServlet {
         }
 
         request.setAttribute("shiireList", shiireList);
-        request.getRequestDispatcher("shiire_list.jsp").forward(request, response);
+        request.getRequestDispatcher("sr_list.jsp").forward(request, response);
     }
 }
